@@ -4,8 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes-Benz</title>
+    <style>
+        /* Sayfa genelindeki yazı tipi ve temel özellikler */
+        body {
+            font-family: Arial, sans-serif; /* Yazı tipini Arial olarak ayarladık */
+            margin: 0; /* Sayfa kenarlarından boşluk kaldırıldı */
+            padding: 0; /* Sayfa içindeki padding boşlukları kaldırıldı */
+            background-color: #f4f4f4; /* Sayfa arka plan rengini açık gri yaptık */
+            color: #333; /* Yazı rengini koyu gri yaptık */
+            text-align: center; /* Sayfadaki tüm metinleri ortaladık */
+        }
+
+        /* Navigasyon menüsünün stili */
+        nav {
+            background-color: #222; /* Menünün arka plan rengini koyu gri yaptık */
+            color: white; /* Metin rengini beyaz yaptık */
+            padding: 10px 0; /* Üst ve alt kenarlarda 10px boşluk ekledik */
+            text-align: center; /* Menü öğelerinin ortalanmasını sağladık */
+        }
+
+        /* Menü bağlantılarının (linklerin) stili */
+        nav a {
+            color: white; /* Link rengini beyaz yaptık */
+            text-decoration: none; /* Link altı çizgisini kaldırdık */
+            margin: 0 15px; /* Linkler arasına yatayda 15px boşluk koyduk */
+            font-size: 18px; /* Linklerin yazı boyutunu 18px yaptık */
+        }
+
+        /* Menü bağlantılarının üzerine gelindiğinde (hover) yapılacak stil */
+        nav a:hover {
+            text-decoration: underline; /* Linklerin üzerine gelindiğinde altını çizer */
+        }
+
+        /* Sayfa başlığı (h1) stili */
+        h1 {
+            color: #1c1c1c; /* Başlık rengini koyu gri yaptık */
+            margin-top: 30px; /* Üstten 30px boşluk ekledik */
+        }
+
+        /* Alt başlıkların (h2) stili */
+        h2 {
+            color: #333; /* Alt başlık rengini koyu gri yaptık */
+        }
+
+        /* Paragrafların (p) stili */
+        p {
+            font-size: 18px; /* Yazı boyutunu 18px yaptık */
+            line-height: 1.6; /* Satır aralığını 1.6 katına çıkardık, böylece yazı daha rahat okunur */
+            max-width: 800px; /* Paragrafların genişliğini 800px ile sınırladık */
+            margin: 20px auto; /* Paragraflara 20px üst ve alt boşluk ekledik, ve ortalanmasını sağladık */
+            text-align: justify; /* Yazıyı iki yana yasladık, bu da yazının düzgün görünmesini sağlar */
+        }
+
+        /* Liste öğelerinin stili */
+        ul {
+            list-style-type: none; /* Liste işaretçilerini (yuvarlaklar) kaldırdık */
+            padding-left: 0; /* Listeyi sola yaslayarak padding boşluğunu kaldırdık */
+            text-align: left; /* Listeyi sola hizaladık */
+            display: inline-block; /* Listeyi yatayda ortaladık */
+        }
+
+        /* Liste elemanlarının (li) stili */
+        ul li {
+            font-size: 16px; /* Liste öğelerinin yazı boyutunu 16px yaptık */
+            margin: 10px 0; /* Liste öğeleri arasında 10px boşluk bıraktık */
+        }
+
+        /* Resimlerin stili */
+        img {
+            display: block; /* Resimleri blok olarak yerleştirdik */
+            margin: 30px auto; /* Resimleri sayfa ortasında yerleştirdik, üst ve alt boşluk bıraktık */
+            width: 80%; /* Resmin genişliğini sayfa genişliğinin %80’i kadar yaptık */
+            max-width: 600px; /* Resmin genişliğini 600px ile sınırlandırdık */
+        }
+
+        /* Yatay çizgi (hr) stili */
+        hr {
+            border: 0; /* Çizginin kenarlıklarını kaldırdık */
+            border-top: 1px solid #ccc; /* Çizgiyi gri renkte ve 1px kalınlıkta yaptık */
+            margin: 20px 0; /* Çizginin üst ve altına 20px boşluk ekledik */
+        }
+
+        /* Sayfanın alt kısmındaki footer'ın stili */
+        footer {
+            background-color: #222; /* Footer arka planını koyu gri yaptık */
+            color: white; /* Footer metin rengini beyaz yaptık */
+            text-align: center; /* Footer metnini ortaladık */
+            padding: 10px 0; /* Footer'a üst ve alt boşluk ekledik */
+            position: fixed; /* Footer'ı sabitledik, sayfada kaymaz */
+            width: 100%; /* Footer'ın genişliğini tamamen sayfa genişliği kadar yaptık */
+            bottom: 0; /* Footer'ı sayfanın en alt kısmına yerleştirdik */
+        }
+
+        /* Footer içindeki bağlantıların stili */
+        footer a {
+            color: #1e90ff; /* Footer'daki linkleri mavi renkte yaptık */
+            text-decoration: none; /* Link altı çizgisini kaldırdık */
+        }
+
+        /* Footer'daki bağlantıların üzerine gelindiğinde yapılacak stil */
+        footer a:hover {
+            text-decoration: underline; /* Link üzerine gelindiğinde altını çizer */
+        }
+    </style>
 </head>
 <body>
+
+    <!-- 🚀 Navigasyon Menüsü -->
+    <nav>
+        <a href="index.html">Ana Sayfa</a> |
+        <a href="modeller.html">Modeller</a> |
+        <a href="hakkimizda.html">Hakkımızda</a> |
+        <a href="galeri.html">Galeri</a> |
+        <a href="iletisim.html">İletişim</a> |
+        <a href="test-surusu.html">Test Sürüşü</a> |
+        <a href="uye-ol.html">Üye Ol</a>
+    </nav>
+    <hr>
+
     <h1>🚗 Mercedes-Benz</h1>
     
     <p>Mercedes-Benz, Almanya merkezli lüks otomobil üreticisi olup dünya genelinde prestiji ve kalitesi ile tanınan bir markadır. 🏆🚘</p>
@@ -45,5 +161,6 @@
         <li><a href="https://www.mercedesamgf1.com" target="_blank">Mercedes-AMG Petronas Formula 1 Takımı</a></li>
         <li><a href="https://en.wikipedia.org/wiki/Mercedes-Benz" target="_blank">Mercedes-Benz Wikipedia Sayfası</a></li>
     </ul>
+
 </body>
 </html>
