@@ -4,100 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Sürüşü</title>
-  <style>
-    /* Sayfa genel özellikleri */
-    body {
-      font-family: Arial, sans-serif; /* Yazı tipi */
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4; /* Arka plan rengi */
-      color: #333; /* Metin rengi */
-      text-align: center; /* Tüm metinleri ortala */
-    }
 
-    /* Navigasyon menüsü */
-    nav {
-      background-color: #222; /* Menü arka plan rengi */
-      color: white;
-      padding: 10px 0;
-    }
-
-    /* Navigasyon linkleri */
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Başlık stili */
-    h1 {
-      color: #1c1c1c;
-      margin-top: 30px;
-    }
-
-    /* Formun genel stili */
-    form {
-      max-width: 400px; /* Form genişliğini sınırlandırdık */
-      margin: 30px auto; /* Formu sayfa ortasına aldık */
-      background-color: #fff; /* Arka plan beyaz */
-      padding: 20px; /* İç boşluk ekledik */
-      border-radius: 8px; /* Kenarları yuvarlattık */
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Hafif gölge efekti */
-      text-align: left; /* Form içeriğini sola hizaladık */
-    }
-
-    /* Form etiketlerinin (label) stili */
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    /* Metin kutusu, tarih ve select elemanlarının stili */
-    input[type="text"],
-    input[type="date"],
-    select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    /* Buton stili */
-    button {
-      background-color: #222;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #444;
-    }
-  </style>
+  <!-- CSS dosyasını dahil et -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- 🚀 Navigasyon Menüsü -->
-  <nav>
-    <a href="index.html">Ana Sayfa</a>
-    <a href="modeller.html">Modeller</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="iletisim.html">İletişim</a>
-    <a href="test-surusu.html">Test Sürüşü</a>
-    <a href="uye-ol.html">Üye Ol</a>
+  <nav class="test-surusu_nav">
+    <a href="index.html">Ana Sayfa</a> |
+    <a href="modeller.html">Modeller</a> |
+    <a href="hakkimizda.html">Hakkımızda</a> |
+    <a href="galeri.html">Galeri</a> |
+    <a href="iletisim.html">İletişim</a> |
+    <a href="test-surusu.html">Test Sürüşü</a> |
+    <a href="uye-ol.html">Üye Ol</a> | 
+    <a href="satis.html">Satış</a> |
+    <a href="kampanya.html">Kampanyalar</a> |
+    <a href="canlidestek.html">Canlı Destek</a> 
   </nav>
 
-  <h1>📝 Test Sürüşü Başvuru Formu</h1>
-  <form>
+  <!-- Sayfa Başlığı -->
+  <h1 class="test-surusu_h1">📝 Test Sürüşü Başvuru Formu</h1>
+
+  <!-- Form -->
+  <form class="test-surusu_form">
     <label for="ad">Ad Soyad:</label>
     <input type="text" id="ad" name="ad">
 

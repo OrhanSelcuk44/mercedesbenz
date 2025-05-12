@@ -4,163 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes-Benz</title>
-    <style>
-        /* Sayfa genelindeki yazı tipi ve temel özellikler */
-        body {
-            font-family: Arial, sans-serif; /* Yazı tipini Arial olarak ayarladık */
-            margin: 0; /* Sayfa kenarlarından boşluk kaldırıldı */
-            padding: 0; /* Sayfa içindeki padding boşlukları kaldırıldı */
-            background-color: #f4f4f4; /* Sayfa arka plan rengini açık gri yaptık */
-            color: #333; /* Yazı rengini koyu gri yaptık */
-            text-align: center; /* Sayfadaki tüm metinleri ortaladık */
-        }
-
-        /* Navigasyon menüsünün stili */
-        nav {
-            background-color: #222; /* Menünün arka plan rengini koyu gri yaptık */
-            color: white; /* Metin rengini beyaz yaptık */
-            padding: 10px 0; /* Üst ve alt kenarlarda 10px boşluk ekledik */
-            text-align: center; /* Menü öğelerinin ortalanmasını sağladık */
-        }
-
-        /* Menü bağlantılarının (linklerin) stili */
-        nav a {
-            color: white; /* Link rengini beyaz yaptık */
-            text-decoration: none; /* Link altı çizgisini kaldırdık */
-            margin: 0 15px; /* Linkler arasına yatayda 15px boşluk koyduk */
-            font-size: 18px; /* Linklerin yazı boyutunu 18px yaptık */
-        }
-
-        /* Menü bağlantılarının üzerine gelindiğinde (hover) yapılacak stil */
-        nav a:hover {
-            text-decoration: underline; /* Linklerin üzerine gelindiğinde altını çizer */
-        }
-
-        /* Sayfa başlığı (h1) stili */
-        h1 {
-            color: #1c1c1c; /* Başlık rengini koyu gri yaptık */
-            margin-top: 30px; /* Üstten 30px boşluk ekledik */
-        }
-
-        /* Alt başlıkların (h2) stili */
-        h2 {
-            color: #333; /* Alt başlık rengini koyu gri yaptık */
-        }
-
-        /* Paragrafların (p) stili */
-        p {
-            font-size: 18px; /* Yazı boyutunu 18px yaptık */
-            line-height: 1.6; /* Satır aralığını 1.6 katına çıkardık, böylece yazı daha rahat okunur */
-            max-width: 800px; /* Paragrafların genişliğini 800px ile sınırladık */
-            margin: 20px auto; /* Paragraflara 20px üst ve alt boşluk ekledik, ve ortalanmasını sağladık */
-            text-align: justify; /* Yazıyı iki yana yasladık, bu da yazının düzgün görünmesini sağlar */
-        }
-
-        /* Liste öğelerinin stili */
-        ul {
-            list-style-type: none; /* Liste işaretçilerini (yuvarlaklar) kaldırdık */
-            padding-left: 0; /* Listeyi sola yaslayarak padding boşluğunu kaldırdık */
-            text-align: left; /* Listeyi sola hizaladık */
-            display: inline-block; /* Listeyi yatayda ortaladık */
-        }
-
-        /* Liste elemanlarının (li) stili */
-        ul li {
-            font-size: 16px; /* Liste öğelerinin yazı boyutunu 16px yaptık */
-            margin: 10px 0; /* Liste öğeleri arasında 10px boşluk bıraktık */
-        }
-
-        /* Resimlerin stili */
-        img {
-            display: block; /* Resimleri blok olarak yerleştirdik */
-            margin: 30px auto; /* Resimleri sayfa ortasında yerleştirdik, üst ve alt boşluk bıraktık */
-            width: 80%; /* Resmin genişliğini sayfa genişliğinin %80’i kadar yaptık */
-            max-width: 600px; /* Resmin genişliğini 600px ile sınırlandırdık */
-        }
-
-        /* Yatay çizgi (hr) stili */
-        hr {
-            border: 0; /* Çizginin kenarlıklarını kaldırdık */
-            border-top: 1px solid #ccc; /* Çizgiyi gri renkte ve 1px kalınlıkta yaptık */
-            margin: 20px 0; /* Çizginin üst ve altına 20px boşluk ekledik */
-        }
-
-        /* Sayfanın alt kısmındaki footer'ın stili */
-        footer {
-            background-color: #222; /* Footer arka planını koyu gri yaptık */
-            color: white; /* Footer metin rengini beyaz yaptık */
-            text-align: center; /* Footer metnini ortaladık */
-            padding: 10px 0; /* Footer'a üst ve alt boşluk ekledik */
-            position: fixed; /* Footer'ı sabitledik, sayfada kaymaz */
-            width: 100%; /* Footer'ın genişliğini tamamen sayfa genişliği kadar yaptık */
-            bottom: 0; /* Footer'ı sayfanın en alt kısmına yerleştirdik */
-        }
-
-        /* Footer içindeki bağlantıların stili */
-        footer a {
-            color: #1e90ff; /* Footer'daki linkleri mavi renkte yaptık */
-            text-decoration: none; /* Link altı çizgisini kaldırdık */
-        }
-
-        /* Footer'daki bağlantıların üzerine gelindiğinde yapılacak stil */
-        footer a:hover {
-            text-decoration: underline; /* Link üzerine gelindiğinde altını çizer */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body class="index_body">
 
-    <!-- 🚀 Navigasyon Menüsü -->
-    <nav>
-        <a href="index.html">Ana Sayfa</a> |
-        <a href="modeller.html">Modeller</a> |
-        <a href="hakkimizda.html">Hakkımızda</a> |
-        <a href="galeri.html">Galeri</a> |
-        <a href="iletisim.html">İletişim</a> |
-        <a href="test-surusu.html">Test Sürüşü</a> |
-        <a href="uye-ol.html">Üye Ol</a>
-    </nav>
-    <hr>
+  <!-- 🚀 Navigasyon Menüsü -->
+  <nav class="index_nav">
+    <a href="index.html">Ana Sayfa</a> |
+    <a href="modeller.html">Modeller</a> |
+    <a href="hakkimizda.html">Hakkımızda</a> |
+    <a href="galeri.html">Galeri</a> |
+    <a href="iletisim.html">İletişim</a> |
+    <a href="test-surusu.html">Test Sürüşü</a> |
+    <a href="uye-ol.html">Üye Ol</a> | 
+    <a href="satis.html">Satış</a> |
+    <a href="kampanya.html">Kampanyalar</a> |
+    <a href="canlidestek.html">Canlı Destek</a> 
+  </nav>
 
-    <h1>🚗 Mercedes-Benz</h1>
-    
-    <p>Mercedes-Benz, Almanya merkezli lüks otomobil üreticisi olup dünya genelinde prestiji ve kalitesi ile tanınan bir markadır. 🏆🚘</p>
-    
-    <p>1926 yılında Karl Benz ve Gottlieb Daimler tarafından kurulan Mercedes-Benz, otomotiv endüstrisinde yenilikçi teknolojileri ve mühendislik harikaları ile ön plana çıkmaktadır. 🌍🔧
+  <hr class="index_hr">
+
+  <h1 class="index_h1">🚗 Mercedes-Benz</h1>
+  
+  <p class="index_p">Mercedes-Benz, Almanya merkezli lüks otomobil üreticisi olup dünya genelinde prestiji ve kalitesi ile tanınan bir markadır. 🏆🚘</p>
+  
+  <p class="index_p">1926 yılında Karl Benz ve Gottlieb Daimler tarafından kurulan Mercedes-Benz, otomotiv endüstrisinde yenilikçi teknolojileri ve mühendislik harikaları ile ön plana çıkmaktadır. 🌍🔧
     Otomobil dünyasında güvenlik, konfor ve performans konularında yaptığı yatırımlarla bilinen marka, her dönem kullanıcılarına en iyi sürüş deneyimini sunmayı hedeflemektedir.</p>
-    
-    <h2>🏎️ Mercedes-Benz Modelleri</h2>
-    <p>Mercedes-Benz, geniş bir model yelpazesine sahiptir. Bazı popüler modeller şunlardır:</p>
-    <ul>
-        <li><b>Mercedes-Benz A-Serisi</b>: Kompakt ve şehir içi kullanımına uygun bir modeldir.</li>
-        <li><b>Mercedes-Benz C-Serisi</b>: Orta sınıf lüks sedan modeli olup geniş iç mekanı ve performansı ile dikkat çeker.</li>
-        <li><b>Mercedes-Benz E-Serisi</b>: Üst segment sedan kategorisinde yer alır ve gelişmiş teknolojik donanımlara sahiptir.</li>
-        <li><b>Mercedes-Benz S-Serisi</b>: Lüksün ve konforun zirvesini temsil eder, en yeni güvenlik ve sürüş teknolojileri ile donatılmıştır.</li>
-        <li><b>Mercedes-Benz G-Serisi</b>: Off-road yetenekleriyle bilinen güçlü ve dayanıklı bir SUV modelidir.</li>
-        <li><b>Mercedes-Benz EQ Serisi</b>: Elektrikli otomobillerden oluşan seridir ve sürdürülebilir enerji kullanımına odaklanır. ⚡</li>
-    </ul>
-    
-    <h2>🔬 Teknoloji ve Yenilikler</h2>
-    <p>Mercedes-Benz, otomotiv sektöründe birçok yeniliğe imza atmıştır. Bunlardan bazıları:</p>
-    <ul>
-        <li><b>Otonom Sürüş</b>: Markanın geliştirdiği ileri düzey sürüş destek sistemleri, araçların kendi kendine sürüş yeteneklerini artırmaktadır.</li>
-        <li><b>MBUX Multimedya Sistemi</b>: Sesli komutlarla çalışan, yapay zeka destekli bilgi-eğlence sistemidir.</li>
-        <li><b>Akıllı Güvenlik Sistemleri</b>: Mercedes-Benz, çarpışma önleme sistemleri, şerit takip asistanı ve otomatik frenleme gibi güvenlik teknolojileriyle ön plana çıkar.</li>
-    </ul>
-    
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mercedes-Benz_S-Class_%28W223%29_IMG_5652.jpg/800px-Mercedes-Benz_S-Class_%28W223%29_IMG_5652.jpg" alt="Mercedes-Benz S-Class" width="600">
-    
-    <h2>🏅 Mercedes-Benz ve Motor Sporları</h2>
-    <p>Mercedes-Benz, motor sporlarında da oldukça başarılıdır. Formula 1'de <b>Mercedes-AMG Petronas F1 Takımı</b>, son yıllarda büyük başarılar elde etmiştir. 
+  
+  <h2 class="index_h2">🏎️ Mercedes-Benz Modelleri</h2>
+  <p class="index_p">Mercedes-Benz, geniş bir model yelpazesine sahiptir. Bazı popüler modeller şunlardır:</p>
+  <ul class="index_ul">
+      <li><b>Mercedes-Benz A-Serisi</b>: Kompakt ve şehir içi kullanımına uygun bir modeldir.</li>
+      <li><b>Mercedes-Benz C-Serisi</b>: Orta sınıf lüks sedan modeli olup geniş iç mekanı ve performansı ile dikkat çeker.</li>
+      <li><b>Mercedes-Benz E-Serisi</b>: Üst segment sedan kategorisinde yer alır ve gelişmiş teknolojik donanımlara sahiptir.</li>
+      <li><b>Mercedes-Benz S-Serisi</b>: Lüksün ve konforun zirvesini temsil eder, en yeni güvenlik ve sürüş teknolojileri ile donatılmıştır.</li>
+      <li><b>Mercedes-Benz G-Serisi</b>: Off-road yetenekleriyle bilinen güçlü ve dayanıklı bir SUV modelidir.</li>
+      <li><b>Mercedes-Benz EQ Serisi</b>: Elektrikli otomobillerden oluşan seridir ve sürdürülebilir enerji kullanımına odaklanır. ⚡</li>
+  </ul>
+  
+  <h2 class="index_h2">🔬 Teknoloji ve Yenilikler</h2>
+  <p class="index_p">Mercedes-Benz, otomotiv sektöründe birçok yeniliğe imza atmıştır. Bunlardan bazıları:</p>
+  <ul class="index_ul">
+      <li><b>Otonom Sürüş</b>: Markanın geliştirdiği ileri düzey sürüş destek sistemleri, araçların kendi kendine sürüş yeteneklerini artırmaktadır.</li>
+      <li><b>MBUX Multimedya Sistemi</b>: Sesli komutlarla çalışan, yapay zeka destekli bilgi-eğlence sistemidir.</li>
+      <li><b>Akıllı Güvenlik Sistemleri</b>: Mercedes-Benz, çarpışma önleme sistemleri, şerit takip asistanı ve otomatik frenleme gibi güvenlik teknolojileriyle ön plana çıkar.</li>
+  </ul>
+  
+  <img class="index_img" src="images\tumblr_nlr9mleWgp1rwtzqno1_540.gif" alt="Mercedes-Benz S-Class" width="600">
+  
+  <h2 class="index_h2">🏅 Mercedes-Benz ve Motor Sporları</h2>
+  <p class="index_p">Mercedes-Benz, motor sporlarında da oldukça başarılıdır. Formula 1'de <b>Mercedes-AMG Petronas F1 Takımı</b>, son yıllarda büyük başarılar elde etmiştir. 
     Lewis Hamilton ve Nico Rosberg gibi dünya şampiyonları bu takımın bir parçası olmuştur. 🏁🏎️</p>
-    
-    <h2>🔗 Kaynakça</h2>
-    <p>Daha fazla bilgi için aşağıdaki kaynakları ziyaret edebilirsiniz:</p>
-    <ul>
-        <li><a href="https://www.mercedes-benz.com" target="_blank">Mercedes-Benz Resmi Web Sitesi</a></li>
-        <li><a href="https://www.mercedesamgf1.com" target="_blank">Mercedes-AMG Petronas Formula 1 Takımı</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Mercedes-Benz" target="_blank">Mercedes-Benz Wikipedia Sayfası</a></li>
-    </ul>
+  
+  <h2 class="index_h2">🔗 Kaynakça</h2>
+  <p class="index_p">Daha fazla bilgi için aşağıdaki kaynakları ziyaret edebilirsiniz:</p>
+  <ul class="index_ul">
+    <li><a href="https://www.mercedes-benz.com" target="_blank">Mercedes-Benz Resmi Web Sitesi</a></li>
+    <li><a href="https://www.mercedesamgf1.com" target="_blank">Mercedes-AMG Petronas Formula 1 Takımı</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Mercedes-Benz" target="_blank">Mercedes-Benz Wikipedia Sayfası</a></li>
+</ul>
+
+
+  <footer class="index_footer">
+    <p>© 2025 Mercedes-Benz. Tüm hakları saklıdır.</p>
+  </footer>
 
 </body>
 </html>

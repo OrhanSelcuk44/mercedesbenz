@@ -4,147 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercedes-Benz Modeller</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      color: #222;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #222;
-      padding: 15px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      margin-top: 60px;
-      color: #000;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .series {
-      width: 300px;
-      height: 200px;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .series:hover {
-      transform: scale(1.03);
-    }
-
-    .series h2 {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #008000;
-      font-size: 24px;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-      z-index: 1;
-    }
-
-    .series img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.6);
-    }
-
-    .details {
-      display: none;
-      background-color: #fff;
-      padding: 20px;
-      margin: 20px auto;
-      width: 60%;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      text-align: left;
-    }
-
-    .details.active {
-      display: block;
-    }
-
-    .details h3 {
-      color: #008000;
-    }
-
-    .details ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Ana Sayfa</a>
-    <a href="modeller.html">Modeller</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="iletisim.html">İletişim</a>
-    <a href="test-surusu.html">Test Sürüşü</a>
-    <a href="uye-ol.html">Üye Ol</a>
+   <!-- 🚀 Navigasyon Menüsü -->
+   <nav class="modeller_nav">
+    <a href="index.html">Ana Sayfa</a> |
+    <a href="modeller.html">Modeller</a> |
+    <a href="hakkimizda.html">Hakkımızda</a> |
+    <a href="galeri.html">Galeri</a> |
+    <a href="iletisim.html">İletişim</a> |
+    <a href="test-surusu.html">Test Sürüşü</a> |
+    <a href="uye-ol.html">Üye Ol</a> | 
+    <a href="satis.html">Satış</a> |
+    <a href="kampanya.html">Kampanyalar</a> |
+    <a href="canlidestek.html">Canlı Destek</a> 
   </nav>
 
-  <h1>🚗 Mercedes-Benz Modelleri</h1>
+  <h1 class="modeller_h1">🚗 Mercedes-Benz Modelleri</h1>
 
-  <div class="container">
-    <div class="series" onclick="showDetails('a-serisi')">
+  <div class="modeller_container">
+    <div class="modeller_series" onclick="showDetails('a-serisi')">
       <img src="images/A-serisi.jpeg" alt="A-Serisi">
       <h2>A-Serisi</h2>
     </div>
-    <div class="series" onclick="showDetails('c-serisi')">
+    <div class="modeller_series" onclick="showDetails('c-serisi')">
       <img src="images/C-serisi.jpeg" alt="C-Serisi">
       <h2>C-Serisi</h2>
     </div>
-    <div class="series" onclick="showDetails('e-serisi')">
+    <div class="modeller_series" onclick="showDetails('e-serisi')">
       <img src="images/E-serisi.jpeg" alt="E-Serisi">
       <h2>E-Serisi</h2>
     </div>
-    <div class="series" onclick="showDetails('s-serisi')">
+    <div class="modeller_series" onclick="showDetails('s-serisi')">
       <img src="images/S-serisi.jpg" alt="S-Serisi">
       <h2>S-Serisi</h2>
     </div>
-    <div class="series" onclick="showDetails('g-serisi')">
+    <div class="modeller_series" onclick="showDetails('g-serisi')">
       <img src="images/Mercedes-G-Serisi.jpg" alt="G-Serisi">
       <h2>G-Serisi</h2>
     </div>
-    <div class="series" onclick="showDetails('eq-serisi')">
+    <div class="modeller_series" onclick="showDetails('eq-serisi')">
       <img src="images/mh_mercedes_eqs_01.jpg" alt="EQ Serisi">
       <h2>EQ Serisi (Elektrikli)</h2>
     </div>
   </div>
 
-  <div id="a-serisi" class="details">
+  <div id="a-serisi" class="modeller_details">
     <h3>A-Serisi Modelleri</h3>
     <ul>
       <li>A 180</li>
@@ -153,7 +60,7 @@
     </ul>
   </div>
 
-  <div id="c-serisi" class="details">
+  <div id="c-serisi" class="modeller_details">
     <h3>C-Serisi Modelleri</h3>
     <ul>
       <li>C 180</li>
@@ -162,7 +69,7 @@
     </ul>
   </div>
 
-  <div id="e-serisi" class="details">
+  <div id="e-serisi" class="modeller_details">
     <h3>E-Serisi Modelleri</h3>
     <ul>
       <li>E 200</li>
@@ -171,7 +78,7 @@
     </ul>
   </div>
 
-  <div id="s-serisi" class="details">
+  <div id="s-serisi" class="modeller_details">
     <h3>S-Serisi Modelleri</h3>
     <ul>
       <li>S 400d 4MATIC</li>
@@ -180,7 +87,7 @@
     </ul>
   </div>
 
-  <div id="g-serisi" class="details">
+  <div id="g-serisi" class="modeller_details">
     <h3>G-Serisi Modelleri</h3>
     <ul>
       <li>G 400d</li>
@@ -188,7 +95,7 @@
     </ul>
   </div>
 
-  <div id="eq-serisi" class="details">
+  <div id="eq-serisi" class="modeller_details">
     <h3>EQ Serisi (Elektrikli) Modelleri</h3>
     <ul>
       <li>EQA 250+</li>
@@ -199,14 +106,6 @@
     </ul>
   </div>
 
-  <script>
-    function showDetails(id) {
-      const allDetails = document.querySelectorAll('.details');
-      allDetails.forEach(detail => detail.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      window.scrollTo({ top: document.getElementById(id).offsetTop - 100, behavior: 'smooth' });
-    }
-  </script>
-
+  <script src="modeller.js"></script> <!-- Sayfaya özgü JavaScript -->
 </body>
 </html>

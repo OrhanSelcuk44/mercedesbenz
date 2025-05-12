@@ -4,85 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hakkımızda</title>
-  <style>
-    /* Sayfa genel özellikleri */
-    body {
-      font-family: Arial, sans-serif; /* Yazı tipi */
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4; /* Arka plan rengi */
-      color: #333; /* Metin rengi */
-      text-align: center; /* Tüm metinleri ortala */
-    }
-
-    /* Navigasyon menüsü */
-    nav {
-      background-color: #222; /* Menü arka planı */
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    /* Menüdeki linkler */
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-    }
-
-    /* Link üzerine gelince */
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Başlık (h1) stili */
-    h1 {
-      color: #1c1c1c;
-      margin-top: 30px;
-    }
-
-    /* Paragraf (p) stili */
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 20px auto;
-      text-align: justify; /* Paragraflar iki yana yaslanır */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"> <!-- CSS dosyasını bağladık -->
 </head>
-<body>
+<body class="hakkimizda_body">
+
   <!-- 🚀 Navigasyon Menüsü -->
-  <nav>
-    <a href="index.html">Ana Sayfa</a>
-    <a href="modeller.html">Modeller</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="iletisim.html">İletişim</a>
-    <a href="test-surusu.html">Test Sürüşü</a>
-    <a href="uye-ol.html">Üye Ol</a>
+  <nav class="hakkimizda_nav">
+    <a href="index.html">Ana Sayfa</a> |
+    <a href="modeller.html">Modeller</a> |
+    <a href="hakkimizda.html">Hakkımızda</a> |
+    <a href="galeri.html">Galeri</a> |
+    <a href="iletisim.html">İletişim</a> |
+    <a href="test-surusu.html">Test Sürüşü</a> |
+    <a href="uye-ol.html">Üye Ol</a> | 
+    <a href="satis.html">Satış</a> |
+    <a href="kampanya.html">Kampanyalar</a> |
+    <a href="canlidestek.html">Canlı Destek</a> 
   </nav>
 
-  <h1>📘 Hakkımızda</h1>
-  <p>Mercedes-Benz, 1926 yılında Karl Benz'in şirketi Benz & Cie. ve Gottlieb Daimler'in şirketi Daimler Motoren Gesellschaft'in birleşmesi sonucu kurulmuş otomotiv ve motor markası. Almanya'nın Stuttgart şehrinde kurulmuştur.</p>
-  <h2>Markanın sahipleri</h2>
-  <h2>Mercedes</h2>
-    <p> Motoren Gesellschaft - 1901-1926</p>
-    <h2>Mercedes-Benz</h2>
-    <p> Daimler-Benz AG - (1926–1998)</p>
-      <p> Daimler-Chrysler AG - (1998–2007)</p>
-        <p>Daimler AG - (2007– 2022)</p>
-          <p>Mercedes-Benz Group - (2022 – günümüz)</p>
-          <h2>İsminin kaynağı</h2>
-          <p>1897 yılında Fransa'nın Nice kentinde yaşayan Avusturyalı tüccar ve Avusturya Nice Başkonsolosu Emil Jellinek, Daimler fabrikasını ziyaret ederek bir otomobil satın aldı. Uluslararası finans dünyası ve aristokrasi ile iyi ilişkiler içinde olan Jellinek, Daimler otomobili ile Fransız Riviera'sında büyük ilgi topladı. Daha sonra Jelinek 1899'da 23 beygir gücünde motorla donatılmış bir Daimler yarış otomobiline büyük kızı Mercedes'in adını vererek bu araçla Nice'de bir yarışa katıldı ve birinci oldu. Bu başarıdan sonra Jelinek, Daimler fabrikasına 36 otomobil sipariş verdi ve bu araçların "Mercedes" adını taşımalarını şart koştu.
+  <h1 class="hakkimizda_h1">📘 Hakkımızda</h1>
+  <p class="hakkimizda_p">Mercedes-Benz, 1926 yılında Karl Benz'in şirketi Benz & Cie. ve Gottlieb Daimler'in şirketi Daimler Motoren Gesellschaft'in birleşmesi sonucu kurulmuş otomotiv ve motor markası. Almanya'nın Stuttgart şehrinde kurulmuştur.</p>
+  <h2 class="hakkimizda_h2">Markanın sahipleri</h2>
+  <h2 class="hakkimizda_h2">Mercedes</h2>
+  <p class="hakkimizda_p">Motoren Gesellschaft - 1901-1926</p>
+  <h2 class="hakkimizda_h2">Mercedes-Benz</h2>
+  <p class="hakkimizda_p">Daimler-Benz AG - (1926–1998)</p>
+  <p class="hakkimizda_p">Daimler-Chrysler AG - (1998–2007)</p>
+  <p class="hakkimizda_p">Daimler AG - (2007– 2022)</p>
+  <p class="hakkimizda_p">Mercedes-Benz Group - (2022 – günümüz)</p>
+  <h2 class="hakkimizda_h2">İsminin kaynağı</h2>
+  <p class="hakkimizda_p">1897 yılında Fransa'nın Nice kentinde yaşayan Avusturyalı tüccar ve Avusturya Nice Başkonsolosu Emil Jellinek, Daimler fabrikasını ziyaret ederek bir otomobil satın aldı. Uluslararası finans dünyası ve aristokrasi ile iyi ilişkiler içinde olan Jellinek, Daimler otomobili ile Fransız Riviera'sında büyük ilgi topladı. Daha sonra Jelinek 1899'da 23 beygir gücünde motorla donatılmış bir Daimler yarış otomobiline büyük kızı Mercedes'in adını vererek bu araçla Nice'de bir yarışa katıldı ve birinci oldu. Bu başarıdan sonra Jelinek, Daimler fabrikasına 36 otomobil sipariş verdi ve bu araçların "Mercedes" adını taşımalarını şart koştu.</p>
+  <h2 class="hakkimizda_h2">Amblem</h2>
+  <p class="hakkimizda_p">Şirketin kurucusu Karl Benz, Deutz'daki motor fabrikasındaki görevinin ilk yıllarında, Köln ve Deutz manzaralı evinin tepesine bir yıldız amblemi koymuş, eşine yazdığı mektuplarda bu yıldızın günün birinde başarıyı ve gücü temsil edeceğini ve fabrikasının üzerinde parlayacağını söylemişti. Yıldız Daimler'in, motorlu araçların "karada, suda, havada" evrenselliğini simgelemektedir. 1909'da tescil edildi.</p>
 
-            Emil Jelinek'in elde ettiği satış başarısı üzerine Daimler, 1901 yılından itibaren ürettiği araçları "Mercedes" olarak adlandırmaya karar verdi. Mercedes İspanyolca konuşulan ülkelerde çok kullanılan bir isimdir. Kelime olarak da Mars gezegeninin İspanyolca adıdır. Lütuf ve zarafet anlamına da gelmektedir. 23 Haziran 1902 tarihinde Mercedes marka adı olarak tescil edildi. 26 Eylül 1902 tarihinden itibaren de kanunlarca koruma altına alındı.</p>
-            <h2>Amblem</h2>
-            <p>Şirketin kurucusu Karl Benz, Deutz'daki motor fabrikasındaki görevinin ilk yıllarında, Köln ve Deutz manzaralı evinin tepesine bir yıldız amblemi koymuş, eşine yazdığı mektuplarda bu yıldızın günün birinde başarıyı ve gücü temsil edeceğini ve fabrikasının üzerinde parlayacağını söylemişti. Yıldız Daimler'in, motorlu araçların "karada, suda, havada" evrenselliğini simgelemektedir. 1909'da tescil edildi.
+  <p class="hakkimizda_p">1916 yılında yıldızın etrafı, içinde dört küçük yıldızın ve Mercedes isminin yer aldığı bir daireye çevrildi.</p>
 
-              1916 yılında yıldızın etrafı, içinde dört küçük yıldızın ve Mercedes isminin yer aldığı bir daireye çevrildi.
-              
-              1926'da Daimler-Benz birleşmesi ile Benz'in defne yapraklarından çelengi yıldızın etrafını sardı.</p>
+  <p class="hakkimizda_p">1926'da Daimler-Benz birleşmesi ile Benz'in defne yapraklarından çelengi yıldızın etrafını sardı.</p>
 </body>
 </html>

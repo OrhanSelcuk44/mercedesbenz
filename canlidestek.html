@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canlı Destek</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🚀 Navigasyon Menüsü -->
+  <nav class="canlidestek-nav">
+    <a href="index.html">Ana Sayfa</a> |
+    <a href="modeller.html">Modeller</a> |
+    <a href="hakkimizda.html">Hakkımızda</a> |
+    <a href="galeri.html">Galeri</a> |
+    <a href="iletisim.html">İletişim</a> |
+    <a href="test-surusu.html">Test Sürüşü</a> |
+    <a href="uye-ol.html">Üye Ol</a> | 
+    <a href="satis.html">Satış</a> |
+    <a href="kampanya.html">Kampanyalar</a> |
+    <a href="canlidestek.html">Canlı Destek</a> 
+  </nav>
+
+  <!-- Chat Content -->
+  <div class="canlidestek-content">
+    <div class="canlidestek-chatbox">
+      <div class="canlidestek-chat-header">Canlı Destek</div>
+      <div class="canlidestek-chat-messages" id="chat-messages">
+        <div class="canlidestek-message canlidestek-bot">Merhaba! Size nasıl yardımcı olabilirim?</div>
+      </div>
+      <div class="canlidestek-chat-input">
+        <input type="text" id="userInput" placeholder="Mesajınızı yazın..." />
+        <button onclick="sendMessage()">Gönder</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="myscript.js"></script>
+  <script>
+    // Bu sayfa yüklendiğinde özel JS fonksiyonunu çalıştır
+    document.addEventListener("DOMContentLoaded", initCanliDestek);
+  </script>
+</body>
+</html>
